@@ -1,0 +1,46 @@
+/* Stijlen voor het body-element */
+body {
+    margin: 0; /* Verwijdert standaardmarges van de body */
+    overflow: hidden; /* Verbergt scrollbars */
+    font-family: Arial, sans-serif; /* Stelt het lettertype in voor de tekst op de pagina */
+    background-color: #000000; /* Stelt de achtergrondkleur van de pagina in op zwart */
+}
+
+/* Stijlen voor het header-element */
+header {
+    position: relative; /* Maakt het mogelijk om absolute positionering van kinderen binnen de header */
+    width: 100vw; /* Stelt de breedte van de header in op de volledige breedte van het viewport */
+    height: 100vh; /* Stelt de hoogte van de header in op de volledige hoogte van het viewport */
+    display: flex; /* Maakt gebruik van flexbox om kinderen binnen de header te positioneren */
+    align-items: center; /* Centreert de kinderen verticaal binnen de header */
+    justify-content: center; /* Centreert de kinderen horizontaal binnen de header */
+}
+
+/* Stijlen voor het canvas-element binnen de header */
+#headerCanvas {
+    position: absolute; /* Positioneert het canvas absoluut binnen de header */
+    top: 0; /* Plaatst het canvas aan de bovenkant van de header */
+    left: 0; /* Plaatst het canvas aan de linkerkant van de header */
+    width: 100%; /* Stelt de breedte van het canvas in op 100% van de header */
+    height: 100%; /* Stelt de hoogte van het canvas in op 100% van de header */
+}
+
+/* Stijlen voor de overlay-tekst binnen de header */
+.text-overlay {
+    position: absolute; /* Positioneert de tekst absoluut binnen de header */
+    top: 50%; /* Plaatst de tekst in het midden van de header (verticaal) */
+    left: 50%; /* Plaatst de tekst in het midden van de header (horizontaal) */
+    transform: translate(-50%, -50%); /* Verschuift de tekst zodat deze precies in het midden wordt geplaatst */
+    color: #ffffff; /* Stelt de kleur van de tekst in op wit */
+    font-size: 4.3rem; /* Stelt de lettergrootte van de tekst in */
+    text-align: center; /* Centreert de tekst binnen de tekstbox */
+    font-family: 'Courier New', Courier, monospace; /* Stelt het lettertype van de tekst in */
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.7); /* Voegt een schaduw toe aan de tekst */
+    opacity: 0.8; /* Stelt de doorzichtigheid van de tekst in */
+    transition: opacity 0.3s ease-in-out; /* Voegt een overgangseffect toe voor de doorzichtigheid */
+}
+
+/* Stijlen voor de hover-toestand van de overlay-tekst */
+.text-overlay:hover {
+    opacity: 1; /* Maakt de tekst volledig zichtbaar bij hover */
+}
